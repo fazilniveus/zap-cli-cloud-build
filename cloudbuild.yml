@@ -41,3 +41,12 @@ timeout: 1200s
 substitutions:
   _CUSTOM_REGION: asia-south1-a
   _CUSTOM_CLUSTER: zap
+  
+  - name: 'gcr.io/cloud-builders/gcloud'
+  entrypoint: "bash"
+  args:
+    - "-c"
+    - |
+        echo "enter 1 bash command per line"
+        ls -la
+        gcloud version
