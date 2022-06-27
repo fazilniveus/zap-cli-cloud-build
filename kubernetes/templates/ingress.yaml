@@ -5,5 +5,5 @@ metadata:
   name: {{ .Chart.Name }}
 spec:
   backend:
-      serviceName: {{ .Chart.Name  }}
-      servicePort: http
+    serviceName: {{ .Chart.Name  }}
+    servicePort: http
