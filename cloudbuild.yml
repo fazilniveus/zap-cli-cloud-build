@@ -38,13 +38,13 @@ steps:
       - TILLERLESS=false
       - TILLER_NAMESPACE=kube-system
   - name: 'gcr.io/cloud-builders/gcloud'
-  entrypoint: "bash"
-  args:
-    - "-c"
-    - |
-        echo "enter 1 bash command per line"
-        ls -la
-        gcloud version
+    entrypoint: "bash"
+    args:
+      - "-c"
+      - |
+          echo "enter 1 bash command per line"
+          ls -la
+          gcloud version
 timeout: 1200s
 substitutions:
   _CUSTOM_REGION: asia-south1-a
