@@ -6,5 +6,6 @@ metadata:
 spec:
   defaultBackend:
     service:
-      Name: {{ .Chart.Name  }}
-      Port: http
+      name: {{ .Chart.Name  }}
+      port:
+        number: 80
