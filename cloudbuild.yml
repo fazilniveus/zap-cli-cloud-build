@@ -37,7 +37,7 @@ steps:
       - KUBECONFIG=/workspace/.kube/config
       - TILLERLESS=false
       - TILLER_NAMESPACE=kube-system
-  - name: 'gcr.io/cloud-builders/gcloud'
+  - name: 'gcr.io/cloud-builders/docker'
     entrypoint: "bash"
     args:
       - "-c"
