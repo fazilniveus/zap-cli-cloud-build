@@ -43,10 +43,10 @@ steps:
       - "-c"
       - |
           pwd
-          sudo docker run -i owasp/zap2docker-stable zap-cli quick-scan --self-contained     --start-options '-config api.disablekey=true' https://niveussolutions.com
+          docker run -i owasp/zap2docker-stable zap-cli quick-scan --self-contained     --start-options '-config api.disablekey=true' https://niveussolutions.com
           echo "Run is Done"
           
-          docker exec zap ls -a
+          docker exec zap pwd
 timeout: 1200s
 substitutions:
   _CUSTOM_REGION: asia-south1-a
